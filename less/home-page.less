@@ -1,20 +1,76 @@
-.home {
 
-  .content-section {
-    margin: 30px 0;
+  header{
+    width: 60%;
+    margin: auto;
+    padding-top:10px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: 1px dotted gray;
+
+    @media @mobile{
+     width: 96%;
+    margin: 0px, 2% 0px 2%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    border-bottom: 1px dotted gray;
+
+    }
+  }
+  .top-image{
+    width: 60%;
+    display: block;
+    margin: auto;
+
+    @media @mobile{
+  width: 80%;
+  height: 150px;
+    }
+    img{
+      margin: inherit;
+      width: 100%;
+    }
+  }
+  .added-content{
+ display: flex;
+ flex-direction: column;
+  width: 60%;
+  margin: auto;
+  }
+.home {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  
+  .content-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
 
-   
-    
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
+    @media @mobile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }
+    .text-content {
+      width: 49%;
+      padding-right: 1%;
 
+      @media @mobile{
+    width: 80%;
+    margin:10px auto 10px auto;
+      }
+    }
     .img-content {
-      width: 48%;
+   
+      width: 49%;
       padding-left: 1%;
 
       img {
@@ -22,40 +78,69 @@
       }
     }
   }
-
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+@media @mobile{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
     }
-
     .img-content {
       padding-right: 1%;
       padding-left: 0;
     }
   }
-
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile{
+    width: 95%;
+    }
     img {
       border-radius: 10px;
     }
   }
-
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
 
+    @media @mobile{
+      padding: 5px;
+      width: 100%;
+      margin: 1px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile{
+        width: 80%;
+
+        }
+        }
+
+      .btn{
+        .btn-style(rgb(51, 117, 155), white);
+        display: block;
+    
+        
+      }
     }
-  }
+  
 }// home
+
